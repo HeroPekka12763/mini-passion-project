@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mini Passion Project</title>
+  <link rel="stylesheet" href="./pages-style.css">
+  <style>
+    body { font-family: system-ui, -apple-system, 'Verdana', Roboto, sans-serif; margin: 0}
+    header { margin-bottom: 1.5rem; }
+    main { max-width: 800px; }
+  </style>
+</head>
+    <div class="navbar">
+  <a href="../index.html">Home</a>
+  <a href="./about.html">About</a>
+  <a href="./coding.html">Coding</a>
+  <a href="./rant.html">Rant</a>
+  <a href="./thank-you.html">Thanks</a>
+</div>
+<!-- Thanks to W3Schools for navigation bar design -->
+<div class="overlay">
+  <br>
+  <br>
+  <br>
+  </div>
+  <body>
+    <div class="main-text">
+        <h1 class="thank-you">Thank You</h1>
+            <p style="display: inline; margin: 0;">
+                Thank you for visiting my website and reading up to this point. I hope you enjoyed listening to what I had to say.
+                I plan to continue my coding journey and really learn valuable skills and programming languages.
+                Thank you for visiting my website and reading up to this point. I hope you enjoyed listening to what I had to say.
+                I plan to continue my coding journey and really learn valuable skills and programming languages.
+                Thank you for visiting my website and reading up to this point. I hope you enjoyed listening to what I had to say.
+                I plan to continue my coding journey and really learn valuable skills and programming languages.
+                Thank you for visiting my website and reading up to this point. I hope you enjoyed listening to what I had to say.
+                I plan to continue my coding journey and really learn valuable skills and programming languages.
+                Thank you for visiting my website and reading up to this point. I hope you enjoyed listening to what I had to say.
+                I plan to continue my coding journey and really learn valuable skills and programming languages.
+                Thank you for visiting my website and reading up to this point. I hope you enjoyed listening to what I had to say.
+                I plan to continue my coding journey and really learn valuable skills and programming languages.
+                <p id="secret-two" style="display: inline; margin: 0; cursor: pointer; user-select: none;">Click here for the second secret.</p>
+                <a id="secret-two-link" href="../downloadables/thank-you.txt" style="display: none;" download="thank-you.txt">Download</a>
+                Thank you for visiting my website and reading up to this point. I hope you enjoyed listening to what I had to say.
+                I plan to continue my coding journey and really learn valuable skills and programming languages.
+                Thank you for visiting my website and reading up to this point. I hope you enjoyed listening to what I had to say.
+                I plan to continue my coding journey and really learn valuable skills and programming languages.
+                Thank you for visiting my website and reading up to this point. I hope you enjoyed listening to what I had to say.
+                I plan to continue my coding journey and really learn valuable skills and programming languages.
+                Thank you for visiting my website and reading up to this point. I hope you enjoyed listening to what I had to say.
+                I plan to continue my coding journey and really learn valuable skills and programming languages.
+                Thank you for visiting my website and reading up to this point. I hope you enjoyed listening to what I had to say.
+                I plan to continue my coding journey and really learn valuable skills and programming languages.
+                Thank you for visiting my website and reading up to this point. I hope you enjoyed listening to what I had to say.
+                I plan to continue my coding journey and really learn valuable skills and programming languages.
+                Thank you for visiting my website and reading up to this point. I hope you enjoyed listening to what I had to say.
+                I plan to continue my coding journey and really learn valuable skills and programming languages.
+                
+            </p>
+<script>
+  let clickCount = 0;
+  const heading = document.getElementById('secret-two');
+  const link = document.getElementById('secret-two-link');
+
+  const secretSound = new Audio('../audio/secret-found.mp3'); 
+
+  heading.addEventListener('click', () => {
+    clickCount++;
+    if (clickCount === 1) {
+        secretSound.play();
+        link.click();
+        const popup = document.createElement('i');
+        popup.innerText = " You found the second secret! ";
+        popup.style.color = "white";
+        popup.style.fontWeight = "bold";
+        popup.style.marginTop = "6px";
+        heading.insertAdjacentElement('afterend', popup);
+    }
+  });
+</script>
+    </div>
+</body>
+</html>

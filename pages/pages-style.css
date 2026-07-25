@@ -1,0 +1,160 @@
+body {
+    font-family: system-ui, -apple-system, 'Verdana', Roboto, sans-serif; 
+    background-color: #252525;
+    align-items: center;
+    justify-content: center;
+    color: #f2f2f2;
+    text-shadow: 1px 1px 1px #777;
+    font-size: 20px;
+}
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed; 
+  top: 0; 
+  width: 100%; 
+  text-shadow: 1px 1px 1px #777;
+}
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+/* Credit to W3Schools for this menu bar */
+.main-text {
+  align-items: center;
+  justify-content: center;
+  padding: 40px 40px;
+  color: #f2f2f2;
+  text-shadow: 1px 1px 1px #777;
+  max-width: 100%;
+}
+.rgb-button {
+  background-color: #af4c4c; 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  padding: 10px 20px; 
+  border-radius: 5px;
+  animation:colorChange;
+  animation-duration:5s;
+  animation-iteration-count:infinite;
+  animation-play-state:running;
+  animation-delay:0s;
+  animation-timing-function:linear;
+  transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.2s;
+}
+.rgb-button:hover {
+  transform: scale(1.1);
+}
+.rgb-button:active {
+  transform: scale(0.95) translateY(0);
+}
+@keyframes colorChange{
+    	9%{background-color:orange;}
+        18%{background-color:yellow;}
+        27%{background-color:green;}
+        36%{background-color:blue;}
+        45%{background-color:purple;}
+        50%{background-color:red;}
+        54%{background-color:orange;}
+        63%{background-color:yellow;}
+        72%{background-color:green;}
+        81%{background-color:blue;}
+        90%{background-color:purple;}
+        100%{background-color:red;}
+}
+.image {
+  align-items: left;
+  justify-content: left;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;  
+  display: block;
+}
+#secret-game:hover{
+  animation:textColorChange;
+  animation-duration:5s;
+  animation-iteration-count:infinite;
+  animation-play-state:running;
+  animation-delay:0s;
+  animation-timing-function:linear;
+  transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.2s;
+}
+@keyframes textColorChange{
+    	9%{color:orange;}
+        18%{color:yellow;}
+        27%{color:green;}
+        36%{color:blue;}
+        45%{color:purple;}
+        50%{color:red;}
+        54%{color:orange;}
+        63%{color:yellow;}
+        72%{color:green;}
+        81%{color:blue;}
+        90%{color:purple;}
+        100%{color:red;}
+}
+#rgb-text{
+  animation:textColorChange;
+  animation-duration:5s;
+  animation-iteration-count:infinite;
+  animation-play-state:running;
+  animation-delay:0s;
+  animation-timing-function:linear;
+  transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.2s;
+}
+.default-style{
+  color: #000000; 
+  font-size: 18px; 
+  background-color: #ffffff; 
+  padding: 10px;
+  text-shadow: 0px 0px 0px #FFF;
+  font-family: 'Times New Roman', Times, serif
+}
+.wide-table {
+  width: 85%;              /* Stretches the table across a large chunk of the screen */
+  max-width: 1200px;       /* Keeps it from getting too wide on massive screens */
+  margin: 40px auto;       /* Centers the table and adds space above/below */
+  background-color: #252525; /* Matches the clean white box in your image */
+  color: #cecccc;             /* Dark text for high contrast readability */
+  border: 1px solid #ccc;  /* Light outer border matching a clean box look */
+  border-collapse: collapse; /* Merges borders into single clean lines */
+}
+.wide-table th, .wide-table td {
+  border: 1px solid #ddd;  /* Light borders between individual cells */
+  padding: 16px;           /* Large padding to mimic a spacious, blocky layout */
+  text-align: left;        /* Aligns text neatly to the left */
+}
+.wide-table th {
+  background-color: #424242; /* Subtle gray highlight for the header row */
+}
+.thank-you {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+    margin: 0;
+}
+#secret-two:hover{
+  animation:textColorChange;
+  animation-duration:5s;
+  animation-iteration-count:infinite;
+  animation-play-state:running;
+  animation-delay:0s;
+  animation-timing-function:linear;
+  transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.2s;
+}

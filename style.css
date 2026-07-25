@@ -1,0 +1,85 @@
+/* Most of this code is ripped from my other projects */
+body {
+    font-family: system-ui, -apple-system, 'Verdana', Roboto, sans-serif; 
+    margin: 0;
+    background-color: #252525;
+    font-size: 20px;
+}
+#page-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+    margin: 0;
+}
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed; 
+  top: 0; 
+  width: 100%; 
+  text-shadow: 1px 1px 1px #777;
+}
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+/* Credit to W3Schools for this menu bar */
+.index-text {
+
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  color: #f2f2f2;
+  text-shadow: 1px 1px 1px #777;
+}
+#index-about-button {
+  background-color: #af4c4c; 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  padding: 10px 20px; 
+  border-radius: 5px;
+  animation:colorChange;
+  animation-duration:5s;
+  animation-iteration-count:infinite;
+  animation-play-state:running;
+  animation-delay:0s;
+  animation-timing-function:linear;
+  transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.2s;
+}
+#index-about-button:hover {
+  transform: scale(1.1);
+}
+#index-about-button:active {
+  transform: scale(0.95) translateY(0);
+}
+@keyframes colorChange{
+    	9%{background-color:orange;}
+        18%{background-color:yellow;}
+        27%{background-color:green;}
+        36%{background-color:blue;}
+        45%{background-color:purple;}
+        50%{background-color:red;}
+        54%{background-color:orange;}
+        63%{background-color:yellow;}
+        72%{background-color:green;}
+        81%{background-color:blue;}
+        90%{background-color:purple;}
+        100%{background-color:red;}
+}
+/* This is my go-to code for like an RGB effect for anything I fell like putting it in */
